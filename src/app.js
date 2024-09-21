@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({extended: false}));
 
 //Rutas
-app.use(require('./routes/entries.routes'))
+app.use(require('./routes/entries.routes.js'))
 
 //404
 app.use((req, res) => {
